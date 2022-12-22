@@ -9,7 +9,7 @@ This project is divided into three parts: data modeling, data engineering, and d
 
 This is where I inspected all six CSV files, and then sketched an Entity Relationship Diagram (ERD) of the tables. To create the sketch, I used a tool called 'QuickDBD'. I produced a Physical data model, showing the many to one and one to one relationships. 
 
-image here
+![Employee_ERD](EmployeeSQL/Images/Physical_model_design_DBD.png)
 
 
 ## <ins>Data Engineering<ins/>
@@ -33,17 +33,51 @@ After doing the above, I had:
 
 1. List the employee number, last name, first name, sex, and salary of each employee.
 
+![Query_1](EmployeeSQL/Images/Query_1.png)
+
+![Output_1](EmployeeSQL/Images/output1.png)
 
 2. List the first name, last name, and hire date for the employees who were hired in 1986.
 
+![Query_2](EmployeeSQL/Images/Query_2.png)
+
+![Output_2](EmployeeSQL/Images/output2.png)
+
 3. List the manager of each department along with their department number, department name, employee number, last name, and first name.
+
+![Query_3](EmployeeSQL/Images/Query_3.png)
+
+![Output_3](EmployeeSQL/Images/output3.png)
 
 4. List the department number for each employee along with that employee’s employee number, last name, first name, and department name.
 
+![Query_4](EmployeeSQL/Images/Query_4.png)
+
+![Output_4](EmployeeSQL/Images/output4.png)
+
 5. List first name, last name, and sex of each employee whose first name is Hercules and whose last name begins with the letter B.
+
+![Query_5](EmployeeSQL/Images/Query_5.png)
+
+![Output_5](EmployeeSQL/Images/output5.png)
 
 6. List each employee in the Sales department, including their employee number, last name, and first name.
 
+![Query_6](EmployeeSQL/Images/Query_6.png)
+
+![Output_6](EmployeeSQL/Images/output6.png)
+
 7. List each employee in the Sales and Development departments, including their employee number, last name, first name, and department name.
 
+![Query_7](EmployeeSQL/Images/Query_7.png)
+
+![Output_7](EmployeeSQL/Images/output7.png)
+
 8. List the frequency counts, in descending order, of all the employee last names (that is, how many employees share each last name).
+
+![Query_8](EmployeeSQL/Images/Query_8.png)
+
+![Output_8](EmployeeSQL/Images/output8.png)
+
+
+
