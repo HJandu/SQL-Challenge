@@ -5,6 +5,8 @@ select * from employees
 select * from salaries
 select * from titles
  
+
+
 -- 1. List the employee number, last name, first name, sex, and salary of each employee.
 
 -- Select columns to display
@@ -42,17 +44,13 @@ ON dm.emp_no = e.emp_no;
 
 -- 4. List the department number for each employee along with that employee’s employee number, last name, first name, and department name.
 
--- Select columns to display
-SELECT e.emp_no, e.last_name, e.first_name, d.dept_name
--- Get employees table as the first table to join other tables
-FROM employees AS e
--- Join dept_emp table to get dept_no to link to department name in department table
-JOIN dept_emp AS de
-ON e.emp_no = de.emp_no
--- Join departments table to have department name
-JOIN departments AS d
-ON de.dept_no = d.dept_no;
 
+SELECT d.dept_no, e.emp_no, e.last_name, e.first_name, d.dept_name
+FROM dept_emp as de
+INNER JOIN employees as e
+ON de.emp_no = e.emp_no
+INNER JOIN departments as d
+ON de.dept_no = d.dept_no;
 
 -- 5. List first name, last name, and sex of each employee whose first name is Hercules and whose last name begins with the letter B.
 
@@ -69,15 +67,11 @@ AND last_name LIKE 'B%';
 
 -- Select columns to display
 SELECT e.emp_no, e.last_name, e.first_name, d.dept_name
--- Get employees table as the first table to join other tables
 FROM employees AS e
--- Join dept_emp table to get dept_no to link to department name in department table
 JOIN dept_emp AS de
 ON e.emp_no = de.emp_no
--- Join departments table to have department name
 JOIN departments AS d
 ON de.dept_no = d.dept_no
--- Apply condition to filter only Sales department
 WHERE d.dept_name = 'Sales';
 
 
