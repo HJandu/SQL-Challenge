@@ -13,7 +13,7 @@ This is where I inspected all six CSV files, and then sketched an Entity Relatio
 
 
 ## <ins>Data Engineering<ins/>
-The above information was exported to create a table schema for each of the six CSV files, specified the data types, primary keys, foreign keys, and other constraints, as seen in 'name image folder' .
+The above information was exported to create a table schema for each of the six CSV files, where I specified the data types, primary keys, foreign keys, and other constraints, as seen in [schema](EmployeeSQL/SQL_files/Schema_edit.sql) file.
 
 After doing the above, I had: 
 - Created the database in PostgreSQL
